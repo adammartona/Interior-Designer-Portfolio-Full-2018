@@ -2,7 +2,7 @@ This is a responsive, one-pager portfolio website for one of my client. I made t
 
 Here you can see the who it looks: http://zoltanzengovari.com/#about
 
-![alt text](http://images/preview.jpg)
+![alt text](/images/preview.jpg)
 
 Used technologies:
 - HTML5
