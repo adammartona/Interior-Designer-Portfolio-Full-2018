@@ -1,0 +1,1456 @@
+/*................................reset...........................................*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*................................clearfix...........................................*/
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+/*.........GLOBLE......*/
+
+body {
+	font-family: 'Lato', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	color: #2d2929;
+	font-weight: 400;
+	letter-spacing: 0.4px;
+}
+h2 {
+	font-size: 45px;
+	color: #352f2e;
+	font-weight: 300;
+	line-height: 55px;
+	text-align: center;
+}
+span.line {
+	width: 45px;
+	height: 5px;
+	background: #352e2e;
+	display: block;
+	border-radius: 5px;
+	margin: 30px auto;
+	text-align: center;
+}
+header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	width: 100%;
+	padding: 70px 0;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.2s ease;
+}
+header.sticky {
+	position: fixed;
+	width: 100%;
+	background: #000;
+	box-shadow: 3px 1px 0.99px 0.01px rgba(0, 0, 0, 0.05);
+	padding: 25px 0 35px;
+}
+header a.logo{padding-top: 12px;display:block;}
+header a.logo img{display:block;margin: -19px;margin-left: -4px;width: 53px;margin-top: -25px;}
+#banner {
+	background: url(images/borito3.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 780px 0 33px;
+	text-align: left;
+	position: relative;
+	-webkit-transition: opacity 4s ease-in-out;
+	transition: background-image 0.5s;
+	-moz-transition: opacity .5s ease-out;
+}
+#banner h1 {
+	font-size: 52px;
+	line-height: 100%;
+	color: #fff;
+	font-weight: 700;
+	padding-bottom: 13px;
+}
+#banner p {
+	color: #fff;
+	font-size: 19px;
+	font-weight: 400;
+}
+#banner span.line {
+	background: #fff;
+	display: inline-block;
+}
+.about {
+	padding: 85px 0;
+	display: flex;
+}
+p.makecenter {
+	text-align: center;
+}
+.about img {
+	width: 100%;
+	display: block;
+	margin-top: -9px;
+}
+.about span.line {
+	margin-bottom: 140px;
+}
+p.aboutp {
+	color: #212121;
+	line-height: 30.9px;
+	margin-bottom: 16px;
+}
+.about a {
+	max-width: 160px;
+	width: 100%;
+	border: 1px solid #333;
+	color: #333;
+	border-radius: 3px;
+	text-align: center;
+	display: block;
+	padding: 12px 0;
+	margin-top: 38px;
+	margin-right: 35px;
+}
+.about a:hover {
+	background: #333;
+	color: #fff;
+	transition: all 0.5s;
+}
+.twitter {
+	padding-bottom: 65px;
+	padding-top: 289px;
+}
+.twitter aside {
+	border: 1px solid #a8a5a5;
+	text-align: center;
+	padding: 70px 120px;
+	margin-bottom: 70px;
+}
+.twitter aside i {
+	color: #453f3f;
+	font-size: 61px;
+}
+.twitter aside p {
+	font-size: 19px;
+	line-height: 34px;
+	font-style: italic;
+	font-weight: 300;
+	padding: 45px 0;
+}
+.twitter aside span {
+	color: #352e2e;
+	font-size: 18px;
+	font-weight: 700;
+}
+article.services {
+	background: url(images/skillborito.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 125px 0 139px;
+	color: #fff;
+}
+article.services span {
+	font-size: 90px;
+	color: #fff;
+	/* display: block; */
+}
+article.services h5 {
+	font-size: 29px;
+	line-height: 26px;
+	font-weight: 300;
+	padding: 27px 0 13px;
+	/* text-align: justify; */
+}
+article.services a {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+}
+span.smallline {
+	width: 15px;
+	height: 2px;
+	background: #fff;
+	border-radius: 3px;
+}
+.team {
+	padding: 110px 0 155px;
+	text-align: center;
+}
+.team span.line {
+	margin-bottom: 100px;
+}
+figure {
+	position: relative;
+}
+figure img {
+	width: 100%;
+	display: block;
+}
+figcaption img {
+	width: auto;
+}
+figcaption {
+	position: absolute;
+	top: 0px;
+	bottom: 0;
+	left: 0px;
+	right: 0;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	visibility: hidden;
+	opacity: 0;
+	border-radius: 50%;
+	transition: all 0.5s;
+	cursor: pointer;
+	padding: 83px;
+}
+figure:hover figcaption {
+	visibility: visible;
+	opacity: 1;
+}
+a.one {
+	width: 47px;
+	float: left;
+}
+a.two {
+	width: 47px;
+	float: left;
+}
+a.three {
+	width: 47px;
+	float: left;
+}
+a.four {
+	width: 47px;
+	float: left;
+}
+.info h3 {
+	margin-top: 25px;
+	font-size: 29px;
+	color: #2d2929;
+	letter-spacing: 0.5px;
+}
+.info p {
+	font-weight: 500;
+}
+.info span.smallline {
+	background: #333;
+	display: block;
+	height: 4px;
+	margin: 0 auto;
+}
+.portfoliosec {
+	padding-top: 99px;
+}
+.portfoliosec span.line {
+	margin-bottom: 70px;
+}
+#filters {
+	margin: 1% auto 70px;
+	width: 100%;
+	text-align: center;
+	padding: 0;
+	list-style: none;
+}
+#filters li {
+	display: inline-block;
+}
+#filters li span {
+	display: block;
+	line-height: 110%;
+	text-decoration: none;
+	color: #2d2929;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 16px;
+	padding: 5px 10px;
+}
+#filters li span.active {
+	color: #2d2929;
+	border: 1px solid #2d2929;
+}
+#portfoliolist .portfolio {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	width: 33%;
+	display: none;
+	float: left;
+	overflow: hidden;
+}
+.portfolio-wrapper {
+	overflow: hidden;
+	position: relative !important;
+	cursor: pointer;
+}
+.portfolio img {
+	width: 100%;
+	display: block;
+	position: relative;
+	padding: 8px;
+	padding-bottom: 2px;
+	padding-right: 0px;
+}
+.imgDescription2 {
+	position: absolute;
+	top: 7px;
+	bottom: 2px;
+	left: 8px;
+	right: 0;
+	background: rgba(0,0,0,0.7);
+	color: #fff;
+	width: 100%;
+	height: auto;
+	font-size: 13px;
+	font-weight: 400;
+	text-align: center;
+	visibility: hidden;
+	opacity: 0;
+	padding-top: 27%;
+	transition: all 0.5s;
+	cursor: pointer;/*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+.portfolio-wrapper:hover .imgDescription2 {
+	visibility: visible;
+	opacity: 1;
+}
+.imgDescription2 h1 {
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 30px;
+}
+.imgDescription2 p {
+	font-size: 14px;
+	color: #b2b2b2;
+}
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (min-width: 1000px) {
+	img#kinder5{
+		width: 98%;
+	}
+}
+@media only screen and (min-width: 300px) and (max-width: 550px) {
+	.caracter1{
+padding-top: 10em;
+}
+	img#zlogoblack{
+		left: 41%;
+		padding: 12px;
+	}
+	.programskills{
+		margin-left:2px;
+	}
+#portfoliolist .portfolio {
+	width: 94%;
+	margin: 1%;
+}
+img#kinder5{
+	width: 102%;
+	padding: -1px;
+}
+}
+@media only screen and (min-width: 550px) and (max-width: 900px) {
+	.caracter1{
+		padding-top: 10em;
+	}
+	img#zlogoblack{
+		left: 44%;
+		padding: 13px;
+	}
+}
+@media only screen and (min-width: 900px) and (max-width: 1500px){
+	img#zlogoblack{
+		left: 46%;
+	}
+}
+@media only screen and (min-width: 1500px) {
+	img#zlogoblack{
+		left: 46%;
+	}
+}
+
+.numbers {
+	background: url(images/data.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 120px 0 160px;
+	color: #fff;
+	text-align: center;
+}
+.numbers span {
+	font-size: 80px;
+}
+.numbers .counter {
+	font-size: 50px;
+	font-weight: 700;
+	margin: 30px auto 20px;
+}
+.numbers p {
+	font-size: 26px;
+	font-weight: 500;
+}
+.mainslide {
+	padding: 77px 0 130px;
+}
+.mainslide i {
+	text-align: center;
+	display: block;
+}
+.mainslide span.line {
+	margin-bottom: 100px;
+}
+#testimonial {
+	background: url(images/man.jpg) no-repeat center center;
+	padding: 150px 0;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+#testimonial p {
+	font-size: 19px;
+	line-height: 34px;
+	font-weight: 300;
+	font-style: italic;
+	margin: 45px 0 50px;
+}
+#testimonial span {
+	font-size: 21px;
+	font-weight: 300;
+}
+.pricing {
+	padding: 90px 0 0 0;
+	text-align: center;
+}
+.pricing span.line {
+	margin-bottom: 170px;
+}
+.pricing article {
+	border: 2px solid #534741;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+.pricing article h3 {
+	width: 192px;
+	height: 192px;
+	border-radius: 50%;
+	color: #fff;
+	background: #464141;
+	text-align: center;
+	margin: -100px auto 30px;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 192px;
+}
+.pricing article h4 {
+	font-size: 32px;
+	color: #2f2b2a;
+	font-weight: 700;
+}
+.pricing article span.line {
+	margin-bottom: 30px;
+}
+.pricing article p {
+	margin-bottom: 30px;
+	font-size: 18px;
+	color: #2f2b2a;
+}
+.pricing article a {
+	padding: 30px 0;
+	background: #464141;
+	color: #fff;
+	font-size: 25px;
+	font-weight: 300;
+	display: block;
+}
+.pricing article a i {
+	margin-left: 10px;
+}
+.pricing article a:hover {
+	background: #2d2929;
+}
+.pricing article h3:hover {
+	background: #2d2929;
+}
+.pricing article:hover a {
+	background: #2d2929;
+}
+.pricing article:hover h3 {
+	background: #2d2929;
+}
+.map {
+	margin-bottom: 80px;
+}
+.map iframe{width:100%; height:470px;}
+.contact {
+	padding: 90px 0;
+}
+.contact span.line {
+	margin-bottom: 70px;
+}
+.boxbalck {
+	border: 1px solid #000000;
+	padding: 20px;
+	margin-bottom: 15px;
+}
+.boxbalck span {
+	font-size: 30px;
+}
+.boxbalck p {
+	text-align: center;
+	color: #494949;
+	font-size: 17px;
+	font-weight: 300;
+}
+.contact h4, .contact legend {
+	margin-bottom: 30px;
+	font-size: 20px;
+	font-weight: 100;
+	color: #303030;
+	border-bottom: none;
+}
+.contact a span {
+	background: #000;
+	display: block;
+	padding: 23px 0;
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	margin-top: 20px;
+}
+.boxbalck1 input {
+	background: none;
+	border: 0;
+	outline: 0;
+}
+.boxbalck1 label {
+	margin-right: 40px;
+}
+.boxbalck1 {
+	border: 1px solid #000000;
+	padding: 22px;
+	margin-bottom: 15px;
+}
+::-webkit-input-placeholder {
+ color: #b2b2b2;
+ font-size:19px;
+ font-style:italic;
+ font-weight:300;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+ color: #b2b2b2;
+ font-size:19px;
+ font-style:italic;
+  font-weight:300;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+ color: #b2b2b2;
+ font-size:19px;
+ font-style:italic;
+  font-weight:300;
+}
+
+:-ms-input-placeholder {
+ color: #b2b2b2;
+ font-size:19px;
+ font-style:italic;
+  font-weight:300;
+}
+
+footer.endit{
+	padding: 35px 0;
+	background: #000000;
+	color:#fff;
+}
+footer.endit ul{text-align:right;}
+footer.endit ul li{display:inline-block; margin-left:30px;}
+footer.endit ul li a i , footer.endit a{color:#fff;}
+footer.endit ul li a i:hover , footer.endit a:hover{color:#d29e9e;}
+footer.endit p{font-weight:300; font-size:17px;}
+
+
+/*EFFECTS FOR ANIMATION*/
+/*EFFECT*/
+.os-animation {
+	opacity: 0;
+}
+.os-animation.animated {
+	opacity: 1;
+}
+.staggered-animation {
+	opacity: 0;
+}
+.staggered-animation.animated {
+	opacity: 1;
+}
+
+
+/*LOADER EFFECT*/
+/*Paste this css to your style sheet file or under head tag*/
+/* This only works with JavaScript,
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+ position: fixed;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: 100%;
+ z-index: 9999;
+ background: #000;
+}
+
+.cssload-container *, .cssload-container *:before, .cssload-container *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+}
+.cssload-container *:before, .cssload-container *:after {
+	content: "";
+}
+
+.cssload-container, .cssload-container *, .cssload-container *:before, .cssload-container *:after {
+	position: absolute;
+	top: 18%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	font-weight: bold;
+	transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+}
+
+.cssload-thing {
+	width: 10em;
+	height: 10em;
+}
+.cssload-thing:before, .cssload-thing:after {
+	width: 0.33333em;
+	height: 0;
+}
+.cssload-thing:before {
+	margin-top: 10em;
+	bottom: auto;
+	background: rgb(39,39,39);
+}
+.cssload-thing:after {
+	top: auto;
+	background: rgb(39,39,39);
+}
+.cssload-thing:nth-child(1) {
+	transform: rotateZ(0deg);
+		-o-transform: rotateZ(0deg);
+		-ms-transform: rotateZ(0deg);
+		-webkit-transform: rotateZ(0deg);
+		-moz-transform: rotateZ(0deg);
+}
+.cssload-thing:nth-child(1):before, .cssload-thing:nth-child(1):after {
+	animation: cssload-thing 0.86s -0s ease-in-out infinite alternate-reverse;
+		-o-animation: cssload-thing 0.86s -0s ease-in-out infinite alternate-reverse;
+		-ms-animation: cssload-thing 0.86s -0s ease-in-out infinite alternate-reverse;
+		-webkit-animation: cssload-thing 0.86s -0s ease-in-out infinite alternate-reverse;
+		-moz-animation: cssload-thing 0.86s -0s ease-in-out infinite alternate-reverse;
+}
+.cssload-thing:nth-child(1):before {
+	background: rgba(255,77,77,0.1);
+	animation: cssload-thing 1.15s -0s linear infinite;
+}
+.cssload-thing:nth-child(1):after {
+	background: rgba(255,77,77,0.75);
+}
+.cssload-thing:nth-child(2) {
+	transform: rotateZ(12deg);
+		-o-transform: rotateZ(12deg);
+		-ms-transform: rotateZ(12deg);
+		-webkit-transform: rotateZ(12deg);
+		-moz-transform: rotateZ(12deg);
+}
+.cssload-thing:nth-child(2):before, .cssload-thing:nth-child(2):after {
+	animation: cssload-thing 0.86s -0.29s ease-in-out infinite alternate-reverse;
+		-o-animation: cssload-thing 0.86s -0.29s ease-in-out infinite alternate-reverse;
+		-ms-animation: cssload-thing 0.86s -0.29s ease-in-out infinite alternate-reverse;
+		-webkit-animation: cssload-thing 0.86s -0.29s ease-in-out infinite alternate-reverse;
+		-moz-animation: cssload-thing 0.86s -0.29s ease-in-out infinite alternate-reverse;
+}
+.cssload-thing:nth-child(2):before {
+	background: rgba(255,112,77,0.1);
+	animation: cssload-thing 1.15s -0.04s linear infinite;
+		-o-animation: cssload-thing 1.15s -0.04s linear infinite;
+		-ms-animation: cssload-thing 1.15s -0.04s linear infinite;
+		-webkit-animation: cssload-thing 1.15s -0.04s linear infinite;
+		-moz-animation: cssload-thing 1.15s -0.04s linear infinite;
+}
+.cssload-thing:nth-child(2):after {
+	background: rgba(255,112,77,0.75);
+}
+
+
+
+
+@keyframes cssload-thing {
+	100% {
+		padding: 1em 0;
+	}
+}
+
+@-o-keyframes cssload-thing {
+	100% {
+		padding: 1em 0;
+	}
+}
+
+@-ms-keyframes cssload-thing {
+	100% {
+		padding: 1em 0;
+	}
+}
+
+@-webkit-keyframes cssload-thing {
+	100% {
+		padding: 1em 0;
+	}
+}
+
+@-moz-keyframes cssload-thing {
+	100% {
+		padding: 1em 0;
+	}
+}
+
+img {
+    width: 30%;
+}
+
+img {
+    /* width: 30%; */
+}
+
+.cssload-container img {
+    width: 284px;
+    margin-top: -8%;
+}
+
+h2.os-animation.animated.zoomIn {
+    font-size: 37px;
+}
+
+i.fa.fa-rocket {
+    font-size: 3em;
+    margin-bottom: 3px;
+    margin-top: 38px;
+    margin-left: 20px;
+    color: white;
+}
+
+i.fa.fa-puzzle-piece {font-size: 3em;margin-bottom: 3px;margin-top: 38px;margin-top: 2;argin-left: 20px;color: white;}
+
+i.fa.fa-calendar-check-o {
+    font-size: 3em;
+    margin-bottom: 3px;
+    margin-top: 38px;
+    margin-left: 15px;
+    color: white;
+}
+
+.col-lg-4.col-sm-4.col-md-4.os-animation.animated.zoomIn {
+    text-align: center;
+    margin-top: 18px;
+}
+
+h2.os-animation.animated.zoomIn {
+    margin-top: 86px;
+}
+
+.sketchfab-embed-wrapper.os-animation.animated.zoomIn {
+    margin-top: 26px;
+}
+
+h2.loadingh2 {
+    color: #d6d2d2;
+    margin-top: 4em;
+    margin-left: 12px;
+    font-size: 22px;
+}
+
+p.os-animation.skills.animated.zoomIn {
+    font-size: x-large;
+    margin-bottom: -22px;
+    /* border-bottom: 1px solid; */
+    padding-bottom: 10px;
+    background: none;
+    color: white;
+}
+
+span.line.os-animation.whiteline.animated.rollIn {
+    background: white;
+    /* margin-top: 0px; */
+}
+
+p.makecenter.os-animation.animated.zoomIn {color: black;}
+
+.cd-primary-nav a:active {
+    font-size: 24px;
+}
+
+wid {}
+
+iframe {
+    width: 99%;
+    height: 29em;
+}
+
+p.automotivep {
+    margin-bottom: -74px;
+    margin-top: 43px;
+}
+
+.skills {
+    background: url("images/aboutborito.jpg") no-repeat center center;
+}
+
+p.skillparagraph {
+    color: white;
+    margin-top: -17px;
+    margin-bottom: 51px;
+}
+
+p.automotivepheader {
+    font-size: xx-large;
+    margin-bottom: -19px;
+    margin-top: 50px;
+}
+
+img#credit {
+    width: 68px;
+    margin-top: 9px;
+}
+
+span.line.os-animation.whiteline.animated.rollIn {
+    margin-top:;
+}
+
+img#gif {
+    /* width: 95%; */
+}
+
+img {}
+
+p.folio_about {
+    font-size: 28px;
+    margin-top: 9%;
+}
+
+.imgDescription2.astract {
+    /* width: 92%; */
+}
+
+p.alert {
+    font-size: 14px;
+}
+
+h2#furniture {
+    padding-bottom: 34px;
+    font-size: 63px;
+    margin-top: 2em;
+}
+
+
+img#kinder2 {
+    width: 100%;
+}
+
+.sor1 {
+}
+
+.kinder.col-lg-4.col-sm-4.col-md-4.os-animation.animated.fadeInLeft {
+}
+
+wi {}
+
+img.kinderimg {
+    width: 100%;
+    padding: 8px;
+    padding-bottom: 22px;
+    padding-bottom:;
+    padding-right: 0px;
+    padding-top: 2em;
+    cursor: pointer;
+}
+
+
+img#kinder5 {
+    width: 100%;
+    padding-left: 0%;
+    padding-bottom: -17px;
+}
+
+h2#kinderh2 {
+    font-size: 61px;
+    padding-bottom: 33px;
+    margin-top: 206px;
+}
+
+p#furnituresetp {
+    font-size: 14px;
+}
+
+p#hiremep {
+    float: inherit;
+    font-size: 13px;
+}
+
+img#zlogoblack {
+    /* left: 44%; */
+    margin-bottom: -83px;
+    margin-top: 55px;
+    width: 92px;
+    position: absolute;
+}
+
+
+img#zlogoblack:hover {
+    /* width: 17%; */
+    /* margin-left: 40%; */
+    /* position: absolute; */
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+    overflow:hidden;
+}
+.item.active img {
+    transition: transform 5000ms linear 0s;
+    /* This should be based on your carousel setting. For bs, it should be 5second*/
+
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+now override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      /* opacity: 1; */
+      /* -webkit-transform: translate3d(0, 0, 0); */
+      /* transform: translate3d(0, 0, 0); */
+    }
+}
+
+
+img.img-responsive {
+    width: 100%;
+    margin-left: 25px;
+    margin-top: 63px;
+}
+h2#kindertitle {
+    margin-top: 235px;
+    margin-bottom: 32px;
+    font-size: 45px;
+}
+div#kindermechanical {
+    margin-left: 4px;
+}
+.kinderportfolio {
+    margin-top: 66px;
+}
+
+h2#instructiontitle {
+    margin-bottom: 62px;
+    font-size: 45px;
+}
+
+
+img#kinder5:hover {}
+
+
+section#about {
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 90px;
+}
+
+.progress-title {
+    text-align: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #000000;
+    font-size: 12px;
+}
+
+.progress {
+    overflow: hidden;
+    height: 24px;
+    margin-bottom: 24px;
+    background-color: #f5f5f5;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.progress-bar.progress-bar-skill1 {
+    float: left;
+    height: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+    -webkit-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+}
+
+.progress-bar-skill1 {
+    background-color: #0b4a77;
+}
+
+.progress-bar-skill2 {
+    background-color: #0b4977;
+}
+
+.progress-bar.progress-bar-skill2 {
+    float: left;
+    height: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+    -webkit-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+}
+
+.progress-bar.progress-bar-skill3 {
+    float: left;
+    height: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+    -webkit-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+}
+
+.progress-bar-skill3 {
+    background-color: #0b4977;
+}
+
+.progress-bar.progress-bar-skill4 {
+    float: left;
+    height: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    transition: width 0.6s ease;
+}
+
+.progress-bar-skill4 {
+    background-color: #0b4977;
+}
+
+.progress-bar-skill5 {
+    background-color: #0b4977;
+}
+
+.progress-bar.progress-bar-skill5 {
+    float: left;
+    height: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    transition: width 0.6s ease;
+}
+
+.skill-item {width: 96%;margin-left: 1em;margin-top: -14px;}
+
+
+img.img-responsive {}
+
+img.img-responsive {
+    margin-top: -10px;
+    margin-left: 1px;
+}
+
+a.carousel-control.right {
+    opacity: 0;
+}
+
+a.carousel-control.left {
+    opacity: 0;
+}
+
+a.carousel-control.left:hover {
+    opacity: 0.3;
+}
+
+a.carousel-control.right:hover {
+    opacity: 0.2;
+}
+
+
+img.kinderimg:hover {
+}
+
+.programskills {
+    margin-top: 3em;
+    margin-bottom: -22em;
+    margin-left: -2%;
+    width: 101%;
+}
+
+button#sendbtn {
+    max-width: 199px;
+    width: 100%;
+    border: 1px solid #333;
+    color: #333;
+    /* border-radius: 3px; */
+    text-align: center;
+    display: block;
+    padding: 1.5em 0;
+    margin-top: 22px;
+    margin-right: 35px;
+    font-weight: 600;
+}
+
+button#sendbtn:hover {
+    background: #333;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+
+h2.loading_concept_car {
+    color: #d6d2d2;
+    margin-top: 10em;
+    margin-left: 12px;
+    font-size: 22px;
+}
+
+h2#furniture {}
+
+img#campus1 {
+    margin-top: -7em;
+}
+
+img#campus1 {
+    margin-top: 9em;
+}
+
+img#stool1 {
+    margin-top: 11em;
+}
+
+.carousel1 {
+    margin-top: -2em;
+}
+
+.caracter1 {
+    margin-top: -12em;
+}
+
+
+.freelance1 {
+    margin-top: -4em;
+}
+
+li{
+    /* display: inline-block; */
+}
+.fa{
+    padding:15px;
+    padding-bottom: 15px;
+    padding-top:15px;
+
+}
+a{
+    display: block;
+}
+
+
+section#banner:hover {
+    background: url(images/borito4.jpg) no-repeat center center;
+    background-size: cover;
+    /* padding: 780px 0 33px; */
+    text-align: left;
+    position: relative;
+    webkit-transition: opacity 4s ease-in-out;
+}
+
+div#furniture2 {
+    margin-top: 14em;
+    width: 100%;
+}
+
+h2#instruction_title {
+    text-decoration: none;
+    color: black;
+}
+
+h2#instruction_title:hover {
+    text-decoration: none;
+}
+
+h2.os-animation.animated.zoomIn {
+    color: black;
+}
+
+span.line.os-animation.whiteline.animated.zoomIn {
+    background: white;
+}
+
+.portfolio-wrapper:hover {
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  /* margin-bottom: -4px; */
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+}
+
+
+span.close.cursor {
+    color: white;
+    opacity: 0.9;
+    font-size: 35px;
+}
+
+strong {
+    font-weight: 900;
+}
+
+h2.os-animation.porfolio_title.animated.zoomIn {
+    margin-bottom: 17px;
+}
+
+
+.about_buttons {
+    display: -webkit-box;
+}
+
+i.fa.fa-behance {
+    font-size: xx-large;
+}
+
+i.fa.fa-location-arrow {
+    font-size: 3em;
+    margin-bottom: 3px;
+    margin-top: 38px;
+    margin-left: 20px;
+    color: white;
+}
+
+i.fa.fa-bolt {
+    font-size: 3em;
+    margin-bottom: 3px;
+    margin-top: 38px;
+    margin-left: 20px;
+    color: white;
+}
